@@ -15,6 +15,8 @@ public class Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
+	 * Instantiates a new servlet.
+	 *
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public Servlet() {
