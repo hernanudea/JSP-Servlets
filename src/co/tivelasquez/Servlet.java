@@ -28,19 +28,7 @@ public class Servlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/*
-		 * PrintWriter out = response.getWriter(); out.print("<!DOCTYPE html>");
-		 * out.print("<html lang='es'>"); out.print("<head>");
-		 * out.print("<meta charset='UTF-8'>"); out.
-		 * print("<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-		 * );
-		 * out.print("<meta http-equiv='X-UA-Compatible' content='ie=edge'>");
-		 * out.println("<title>Aprendiendo Servlets</title>");
-		 * out.println("</head>"); out.println("<body>");
-		 * out.println("<h1>Hola mundo desde Servlet!!!</h1>");
-		 * out.println("<h2>By Hern&aacute;n Velásquez</h2>");
-		 * out.println("</body>"); out.println("</html>");
-		 */
+		
 
 		// creeamos un parametro Get llamado accion
 		String accion = request.getParameter("accion");
@@ -60,6 +48,7 @@ public class Servlet extends HttpServlet {
 		// ").append(request.getContextPath());
 	}
 
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
