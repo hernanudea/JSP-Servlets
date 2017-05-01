@@ -7,18 +7,13 @@
 <title>Página JSP</title>
 </head>
 <body>
-<h1>Contenido desde HTML</h1>
+<h1>Index.jsp</h1>
 
-<%
-	String s = "Este es un mensaje no dinánico desde Java";
-	out.println(s);
-%>
-<p>Este es un mensaje no dinánico desde HTML</p>
+<p>
+<a href="?accion=login">Iniciar Sección</a>
 
-<%
-	//En JSP el objeto request está implicito
-	out.println("la siguiente linea es contenido dinamico:\n" + request.getHeader("USER-AGENT"));
-%>
+
+</p>
 
 </body>
 </html>
