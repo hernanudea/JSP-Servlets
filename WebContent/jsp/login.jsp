@@ -12,7 +12,7 @@
 	<a href="?accion=inicio">Regresar</a>
 
 
-	<form method="get">
+	<form method="post" action="?accion=iniciarSeccion">
 		<table>
 			<tr>
 				<td>Nombre de Usuario</td>
@@ -23,11 +23,12 @@
 				<td><input type="password" name="contrasena" placeholder="Tu contraseña"></td>
 			</tr>
 			<tr>
-				<td><input type="hidden" name="accion" value="iniciarSeccion"></td>
+				<td></td>
 				<td><input type="submit" value="Iniciar Sección"></td>
 			</tr>
 		</table>
 	</form>
+
 
 </body>
 </html>

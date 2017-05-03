@@ -9,12 +9,24 @@
 <body>
 	<h1>PostLogin.jsp</h1>
 
-	<%
-		out.println("Tu usuario es: " + request.getParameter("usuario"));
-	%>
+	<br>
+	<h2>Request</h2>
+	<%="Usuario: " + request.getAttribute("usuario") + ", Contraseña: "
+					+ request.getAttribute("contrasena")%>
 
-	<%-- otra forma de invocar a out.println es usando <%= %> --%>
-	<%="Tu contraseña es: " + request.getParameter("contrasena")%>
+	<br>
+	<h2>Sesion</h2>
+	<%="Usuario: " + session.getAttribute("usuario") + ", Contraseña: "
+					+ session.getAttribute("contrasena")%>
+
+	<br>
+	<h2>Context</h2>
+	<%="Usuario: " + application.getAttribute("usuario") + ", Contraseña: "
+					+ application.getAttribute("contrasena")%>
+
+	<p>
+		<a href="?accion=inicio">Regresar a inicio</a>
+	</p>
 
 </body>
 </html>
